@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">  
+	<title>Abc Web devoloper</title>
+	<h1 style="font-size:60px;">Unknow Facts About "Birds"</h1>
+ <style type="text/css">
+  h1,h2{
+  	text-decoration-style: rgb(240, 55, 102);
+  	text-align:center;
+  	color: tomato;
+  }
+  body
+  {
+  	background-color: #E0FFFF;
+  }
+ .qwerty{   
+     padding: 10px;
+     border-radius: 8px; 
+     margin-top: 15%;
+     margin-left: 19%;
+     transition: 0.3s;
+     width: 30%;
+     height: 340px;
+     margin-left: 20pt;
+     margin-top: auto;
+     margin-bottom: 20pt;
+ }
+  .xyz{
+     padding: 10px;
+     margin: 0;
+     border: 2px solid black;
+     outline-style: dotted;
+     outline-color: blue;
+     text-align:center;
+     font-family: 'Source Sans Pro'; 
+     font-size: 28px; 
+     border: 1px solid #9E9E9E; 
+     border-radius: 8px; 
+     margin-top: 15%;
+     margin-left: 19%;
+     box-shadow: 0 8px 20px 0 rgba(0.4,0.4,0.4,0.4);
+     transition: 0.3s;
+     width: 30%;
+     height: 340px;
+     margin-left: auto;
+     margin-top: -200pt;
+}
+input[type=text]:focus {
+  background-color: lightblue;
+}
+@media screen and (max-width: 650px) {
+  .col {
+    width: 100%;
+    margin-top: 0;
+  }
+  /* hide the vertical line */
+  .vl {
+    display: none;
+  }
+  /* show the hidden text on small screens */
+  .hide-md-lg {
+    display: block;
+    text-align: center;
+  }
+}
+</style>
+   <script type="text/javascript">
+    function validate()
+    {
+      var username =  document.gotElementBYId("uname");
+      var password =  document.gotElementBYId("pass");
+      if(username.value.trim() == ""|| password.value.trim()=="") 
+      {
+        alert("No blank value allowed");
+        return false;
+      }
+      else
+      {
+        true;
+      }
+    }
+</script>
+</head>
+<div class="container">
+<picture>
+ <div class="qwerty"> <img src="pic1.jpg" width="500" height="500""></div>
+</picture>
+<div class="xyz">
+<form onsubmit=" return validate()"
+   action="home.html">
+	<h3>Sign In / Login in</h3>
+  <label>Username:</label>
+  <input id="uname" placeholder="Username" type="text" required="">
+  <br><br>
+  <label>Password:</label>
+  <input id="pass" placeholder="Password" type="password"required/>
+  <br><br>
+  <button type="submit">Submit </button> 
+  <label> <input type="checkbox" checked="checked" name="remember"> Remember me </label>
+</form> 
+</div></div>
+</body>
+<br><br> 
+<marquee><i> Information about Bird & Unknow Fact's &copy; copyright2020</i></marquee>
+</html>
